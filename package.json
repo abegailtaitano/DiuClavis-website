@@ -2,7 +2,7 @@
   "name": "portfolio-project",
   "version": "1.0.0",
   "description": "This is a website for the fictional campsites review site Nucamp",
-  "main": "diuclavisindex.html",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
