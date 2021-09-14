@@ -24,9 +24,10 @@ body, html {
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
+    text-align:center;
   }
   
   .sidenav a:hover {
@@ -37,13 +38,6 @@ body, html {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
-  .main {
-    margin-left: 100px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-
 
 .pic1, .pic2, .pic3 {
     position:relative;
@@ -73,17 +67,17 @@ body, html {
 .section {
     text-align:center;
     padding:50px 80px;
-    margin-left:20px; /*this is for the sections to move over a little */
+    margin-left:50px; /*this is for the sections to move over a little */
 }
 
 .section-light {
-    background-color:#f4f4f4;
+    background-color:#e9e1e1;
     color:#666;
 }
 
 .section-dark {
     background-color:#282e34;
-    color:#ddd;
+    color:rgb(41, 32, 32);
 }
 
 .ptext {
@@ -91,15 +85,15 @@ body, html {
     top:50%;
     width:100%;
     text-align:center;
-    color:black;
-    font-size:27px;
+    color:rgb(0, 0, 0);
+    font-size:40px;
     letter-spacing:8px;
     text-transform:uppercase;
 }
 
 .ptext .border {
     background-color:#111;
-    color:white;
+    color:rgb(167, 6, 6);
     padding:20px;
 }
 
@@ -109,13 +103,13 @@ body, html {
 
 /* code below is to have the images just scroll in mobile devices take it off if you want it to have parallex effect*/
 @media(max-width:568px) {
-    .pic1, .pic2, pic3 {
+    .pic1, .pic2, .pic3 {
         background-attachment:scroll;
     }
 }
 
 .section-footer {
-    background-color:rgb(214, 209, 209);
+    background-color:#c4c1c1;
     text-align:center;
 }
 
@@ -131,3 +125,46 @@ body, html {
     height:400px;
 }
 
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+/* services page css */
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 50%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+ 

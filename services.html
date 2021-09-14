@@ -16,21 +16,94 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="CSS/projectstyles.css" /> 
 
-
     <title>Services</title>
-</head>
-<body>
-        <!--Navigation bar code-->
+    </head>
+    <body>
+    <style>
+        .center {
+            color:indigo;
+        }
+        table {
+            text-align: center;
+            margin-left:50px;
+        }
+        th , td , tr {
+            color:rgb(223, 217, 228);
+            font-size:20px;
+        }
+    </style>
+    <!--Navigation bar code-->
         <div class="sidenav">
-            <a href="diuclavisindex.html">Home</a>
-            <a href="aboutus.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html"><i class="fa fa-home"></i>Home</a>
+            <a href="aboutus.html"><i class="fa fa-info"></i>About</a>
+            <a href="services.html"><i class="fa fa-wpforms"></i>Services</a>
+            <a href="contact.html"><i class="fa fa-phone"></i>Contact</a>
         </div>
 
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="./IMG/versacenailvideo.MP4" type="video/mp4">
+        </video>
 
-
-
+     
+    
+    <!-- Optional: some overlay text to describe the video -->
+        <div class="content">
+            <div class="col">
+          <table class="table table-hover table-active table">
+            <thead>
+              <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Short</th>
+                <th scope="col">Medium</th>
+                <th scope="col">Large</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Gel X</th>
+                <td>$50/$55 Square/Stiletto/Almond</td>
+                <td>$60/$65 Round/Stiletto/Coffin</td>
+                <td>$70/$80 Coffin</td>
+              </tr>
+              <tr>
+                <th scope="row">Acrylic</th>
+                <td>$50/$60 Any Shape</td>
+                <td>$60/$70 Any Shape</td>
+                <td>$70/$80 Any Shape</td>
+              </tr>
+              <tr>
+                <th scope="row">Designs/Add-ons</th>
+                <td>Matte $3 French tip $5 Short nails/ $10 medium </td>
+                <td>Crystals $3 (1-5 gems/finger)</td>
+                <td>Stickers $1 (1-3)/finger-Foils $3</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <h1>"You like my nails? Gee thanks I bought it!"</h1>
+            <form id="booknow">
+                <div class="row form-group">
+                    <label for="fistName" class="col-sm-4 col-form-label"></label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="lastName" class="col-sm-4 col-form-label"></label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label for="date" class="col-sm-4 col-form-label"></label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="date" name="date" id="date" placeholder="">
+                    </div>
+                </div>
+            </form>  
+        <button id="myBtn">Book Now</button> <!-- Use a button to pause/play the video with JavaScript -->
+    </div>
 
  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

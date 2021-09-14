@@ -19,28 +19,65 @@
     
     <title>About Us</title>
 </head>
+
 <body>
     <style>
         body {
-          background-image: url('IMG/pexels-mikhail-nilov-6707629.jpg');
-          background-repeat: no-repeat;
+            background-image: url("./IMG/pexels-daria-shevtsova-1029803.jpg");
+            position:relative;
+            background-position:center;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
         }
-        </style>
-    
+        .card {
+            text-align: center;
+            border-color:rgb(14, 13, 13);
+            background-color:rgb(168, 149, 149);
+            color:rgb(12, 11, 12);
+            margin:auto;
+        }
+        .container {
+            text-align: center;
+            margin:auto;
+        }
+        .col {
+            border-style:double;
+        }
+    </style>
+
         <!--Navigation bar code-->
     <div class="sidenav">
-        <a href="diuclavisindex.html">Home</a>
-        <a href="#about">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html"><i class="fa fa-home"></i>Home</a>
+        <a href="aboutus.html"><i class="fa fa-info"></i>About</a>
+        <a href="services.html"><i class="fa fa-wpforms"></i>Services</a>
+        <a href="contact.html"><i class="fa fa-phone"></i>Contact</a>
     </div>
     
-    <div class="main">
-        <h2>ABOUT US:</h2>
-        <p> William Taitano, professionally known as Diu Clavis, is a freelance licensed nail technician that specializes in natural nail care, gel extensions, and nail art as of February 2021. Growing up, he always envisioned finding a career that had a unique creative outlet, but something he could continue to build from and evolve the longer he is involved within the beauty industry.
-            His main goal with nails are guaranteed flawless results, reliability, and make sure that customer satisfaction is of upmost importance. Our hands is one of the first things people notice when communicating, and to be able to give that confidence and make people feel beautiful is all that matters.
-         </p>
-    </div>
+    <div class="container">
+            <div class="row justify-content-center">
+                 <div class="col-sm-6">
+                    <div class="card">
+                    <img src="./IMG/william5.jpg" alt="Bruno" style="width:100%">
+                         <div class="container">
+                             <h2>William Taitano</h2>
+                                <p class="title">CEO &amp; Founder</p>
+                                 <p>Professionally known as Diu Clavis, is a licensed nail technician that specializes in natural nail care, gel extensions, and nail art as of February 2021. Growing up, he always envisioned finding a career that not only has a unique creative outlet, but also a career where he can grow and evolve from, within the beauty industry.
+                                 William's goals as a Nail technician are to have guaranteed flawless results, reliability, and to make sure that his customer satisfaction is of the utmost importance. Hands are one of the first features people notice when communicating, and to be able to give that confidence and make people feel beautiful is all that matters to us here at Diu Clavis Salon.</p></p>
+                                 <p>w50127@icloud.com</p>
+                                 <p><button class="button">Contact</button></p>
+                             </div>
+                    </div>
+                 </div>
+              </div>
+         </div>
+      <div class="col">
+            <div class="card bg-light">
+                <blockquote class="blockquote card-body">
+                    <p class="mb-0">"Nails are the period at the end of the sentence. They complete the look."- Prabal Gurung</p>
+                </blockquote>
+            </div>
+        </div>   
 
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
