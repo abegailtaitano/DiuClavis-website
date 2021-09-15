@@ -23,7 +23,7 @@
 <body>
     <style>
         body {
-            background-image: url("./IMG/pexels-daria-shevtsova-1029803.jpg");
+            background-image: url("./IMG/grey.jpg");
             position:relative;
             background-position:center;
             background-size:cover;
@@ -33,20 +33,38 @@
         .card {
             text-align: center;
             border-color:rgb(14, 13, 13);
-            background-color:rgb(168, 149, 149);
-            color:rgb(12, 11, 12);
+            background-color:rgb(211, 202, 202);
+            color:rgb(8, 8, 8);
             margin:auto;
         }
         .container {
             text-align: center;
             margin:auto;
+            background-color: rgb(8, 8, 8);
         }
         .col {
             border-style:double;
+            margin-left:30px;
+        }
+        /* Three image containers (use 25% for four, and 50% for two, etc) */
+        .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        }
+
+        /* Clear floats after image containers */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+        .img {
+            border-radius: 8px;
         }
     </style>
 
-        <!--Navigation bar code-->
+    <!--Navigation bar code-->
     <div class="sidenav">
         <a href="index.html"><i class="fa fa-home"></i>Home</a>
         <a href="aboutus.html"><i class="fa fa-info"></i>About</a>
@@ -55,29 +73,37 @@
     </div>
     
     <div class="container">
-            <div class="row justify-content-center">
-                 <div class="col-sm-6">
-                    <div class="card">
-                    <img src="./IMG/william5.jpg" alt="Bruno" style="width:100%">
-                         <div class="container">
-                             <h2>William Taitano</h2>
-                                <p class="title">CEO &amp; Founder</p>
-                                 <p>Professionally known as Diu Clavis, is a licensed nail technician that specializes in natural nail care, gel extensions, and nail art as of February 2021. Growing up, he always envisioned finding a career that not only has a unique creative outlet, but also a career where he can grow and evolve from, within the beauty industry.
-                                 William's goals as a Nail technician are to have guaranteed flawless results, reliability, and to make sure that his customer satisfaction is of the utmost importance. Hands are one of the first features people notice when communicating, and to be able to give that confidence and make people feel beautiful is all that matters to us here at Diu Clavis Salon.</p></p>
-                                 <p>w50127@icloud.com</p>
-                                 <p><button class="button">Contact</button></p>
-                             </div>
-                    </div>
-                 </div>
-              </div>
-         </div>
-      <div class="col">
+        <div class="media">
+         <img src="./IMG/william.jpg" class="d-flex mr-3 img-thumbnail">
+            <div class="media-body">
+                <h2>William Taitano</h2>
+                 <p class="title">CEO &amp; Founder</p>
+                 <p>Professionally known as Diu Clavis, is a licensed nail technician that specializes in natural nail care, gel extensions, and nail art as of February 2021. Growing up, he always envisioned finding a career that not only has a unique creative outlet, but also a career where he can grow and evolve from, within the beauty industry.
+                 William's goals as a Nail technician are to have guaranteed flawless results, reliability, and to make sure that his customer satisfaction is of the utmost importance. Hands are one of the first features people notice when communicating, and to be able to give that confidence and make people feel beautiful is all that matters to us here at Diu Clavis Salon.</p>
+                <p>w50127@icloud.com</p>
+                <p><button class="button">Contact</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
             <div class="card bg-light">
                 <blockquote class="blockquote card-body">
                     <p class="mb-0">"Nails are the period at the end of the sentence. They complete the look."- Prabal Gurung</p>
                 </blockquote>
             </div>
-        </div>   
+     </div>   
+     <div class="row">
+        <div class="column">
+          <img src="./IMG/colorflames.jpg" alt="Faces" class="img" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="./IMG/purple.jpg" alt="Pedicure" class="img" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="./IMG/realflower.jpg" alt="Fire" class="img" style="width:100%">
+        </div>
+      </div>
+
 
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
